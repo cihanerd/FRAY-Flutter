@@ -10,8 +10,8 @@ class AuthService {
       "username": username,
       "password": password,
       "grant_type": "password",
-      "client_id": "3da4385d-5166-4c1f-9c4b-49afe82be47e",
-      "client_secret": "123456"
+      "client_id": "",
+      "client_secret": ""
     };
     var dio = Dio();
     try {
@@ -54,8 +54,8 @@ class AuthService {
       final refreshToken = await AuthService.getRefreshToken();
       Map<String, dynamic> data = {
         "grant_type": "refresh_token",
-        "client_id": "3da4385d-5166-4c1f-9c4b-49afe82be47e",
-        "client_secret": "123456",
+        "client_id": "",
+        "client_secret": "",
         "refresh_token": refreshToken
       };
       var dio = Dio();
